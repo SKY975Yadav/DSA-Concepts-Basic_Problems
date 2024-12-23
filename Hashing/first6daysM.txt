@@ -1,0 +1,179 @@
+Day 1 : 1. Python for Machine Learning (3 hours)
+Topics:
+Python Basics: Data types, loops, and functions.
+Introduction to NumPy: Basic operations and arrays.
+Tasks:
+Practice writing simple Python scripts.
+Experiment with NumPy arrays: Create, reshape, and perform basic operations.
+Resources:
+Python Basics - W3Schools
+NumPy Quickstart - NumPy.org
+2. Introduction to Machine Learning (2.5 hours)
+Topics:
+What is Machine Learning?
+Types of Machine Learning: Supervised and Unsupervised Learning.
+Tasks:
+Watch the first lesson of Andrew Ng's course.
+Reflect on how ML is used in everyday applications.
+Resources:
+Andrew Ng's Machine Learning Course (Week 1) - Coursera
+Practical: Setting Up Your Environment (30 minutes)
+Tasks:
+Install Python, Jupyter Notebook/Google Colab.
+Install NumPy and Pandas.
+Summary:
+Focus on mastering Python basics and getting familiar with NumPy.
+Gain a foundational understanding of what ML is and its types.
+Set up your programming environment.
+This should make the day more manageable. How does this look?
+
+Day 2: Diving Deeper into Python and Machine Learning
+Duration: 6 hours
+
+1. Advanced Python Concepts (3 hours)
+Topics:
+
+Functions:
+Defining Functions: Learn how to define functions using def and return values.
+Lambda Functions: Understand and create anonymous functions using lambda.
+Decorators: Learn how to use decorators to modify the behavior of functions.
+Recursion: Explore recursive functions and their applications.
+Tasks:
+
+Write several functions, including those with default arguments, keyword arguments, and variable-length arguments.
+Create and use lambda functions in your code.
+Implement a simple decorator.
+Write a recursive function to solve a common problem (e.g., factorial, Fibonacci).
+2. Exploring Pandas (2 hours)
+Topics:
+
+Introduction to Pandas:
+Series and DataFrames: Learn the basics of these two key data structures in Pandas.
+Data Manipulation: Understand how to load, filter, and manipulate data using Pandas.
+Handling Missing Data: Learn techniques to handle missing data using dropna() and fillna().
+Tasks:
+
+Install Pandas and load a dataset into a DataFrame.
+Perform basic operations like selecting, filtering, and sorting data.
+Handle missing data in a dataset and practice cleaning the data.
+3. Linear Algebra with NumPy (1 hour)
+Topics:
+
+Vectors and Matrices: Understand the representation of vectors and matrices using NumPy.
+Matrix Operations: Learn how to perform basic matrix operations like addition, subtraction, multiplication, and inversion.
+Eigenvalues and Eigenvectors: Briefly explore the concept of eigenvalues and eigenvectors in linear algebra.
+Tasks:
+
+Create and manipulate vectors and matrices using NumPy.
+Perform matrix multiplication using the dot function.
+Calculate the determinant and inverse of a matrix.
+(Optional) Explore eigenvalues and eigenvectors using NumPy.
+
+Day 3 Schedule (6 hours)
+1. Python Advanced Topics: Generators and Iterators (2 hours)
+Topics:
+
+Generators: Learn how to use generators to create iterators in a memory-efficient way.
+Iterators: Understand how to create and use custom iterators.
+Tasks:
+
+Learn Generators: Study how to use the yield keyword to create generators.
+Understand Iterators: Explore how to implement the iterator protocol in Python.
+Resources:
+
+Generators Tutorial: Real Python - Generators
+Iterators Tutorial: GeeksforGeeks - Iterators
+2. Machine Learning Fundamentals: Regression (2 hours)
+Topics:
+
+Linear Regression: Learn about the most basic form of regression analysis.
+Multiple Linear Regression: Understand how to extend linear regression to include multiple variables.
+Tasks:
+
+Understand Linear Regression: Study the theory behind linear regression.
+Implement Regression in Python: Use Python libraries like Scikit-Learn to implement and visualize regression models.
+Resources:
+
+Linear Regression Tutorial: Towards Data Science - Linear Regression
+Scikit-Learn Documentation: Scikit-Learn - Linear Regression
+3. Hands-On Practice: Build Your First Machine Learning Model (2 hours)
+Topics:
+
+Data Preprocessing: Learn how to clean and prepare your data for modeling.
+Model Training: Train a machine learning model on a dataset.
+Model Evaluation: Evaluate the performance of your model.
+Tasks:
+
+Choose a Dataset: Select a simple dataset (e.g., Boston Housing or Iris).
+Preprocess Data: Clean and preprocess the dataset.
+Train Model: Implement a regression model using Scikit-Learn.
+Evaluate Model: Use metrics like Mean Squared Error (MSE) to evaluate the model's performance.
+Resources:
+
+Kaggle Datasets: Kaggle - Datasets
+Model Training and Evaluation: Scikit-Learn - Model Evaluation
+
+Day 4: Introduction to Data Preprocessing and Exploratory Data Analysis (EDA) (5 hours)
+Topics:
+Data Preprocessing (2 hours)
+
+Handling Missing Data: Learn techniques to fill or remove missing values.
+Data Encoding: Understand how to convert categorical data to numerical data (one-hot encoding, label encoding).
+Feature Scaling: Techniques like normalization and standardization.
+Tasks:
+
+Read a guide or watch a video on basic data preprocessing techniques.
+Practice on a real dataset using pandas and scikit-learn for scaling, encoding, and filling missing data.
+Exploratory Data Analysis (EDA) (3 hours)
+
+Descriptive Statistics: Understand basic statistics and how to use describe() for data summaries.
+Visualizing Data: Learn to use libraries like Matplotlib and Seaborn for data visualization (histograms, scatter plots, heatmaps).
+Correlation and Covariance: Understanding relationships between variables and how to interpret them.
+Tasks:
+
+Practice visualizing different datasets with Matplotlib/Seaborn.
+Analyze relationships between variables using correlation matrices.
+Reflect on patterns you observe and prepare a small report summarizing insights.
+
+Day 5 Learning Plan (6 hours)
+1. Data Preprocessing: Advanced Techniques (2 hours)
+Handling Imbalanced Data: Learn methods like oversampling (SMOTE), undersampling, and using class weights.
+Outlier Detection: Techniques to identify and remove outliers (IQR, Z-score).
+Feature Selection: Use methods like correlation matrix, feature importance from models (e.g., Random Forest), and recursive feature elimination (RFE).
+Tasks:
+
+Read about SMOTE and apply it to a sample dataset.
+Use Z-score to remove outliers from a dataset.
+Perform feature selection using a correlation matrix and RFE.
+2. Exploratory Data Analysis (EDA) with Visualization (2 hours)
+Advanced Visualization with Seaborn: Pair plots, violin plots, and swarm plots.
+Interactive Visualizations with Plotly: Create interactive scatter plots, bar charts, and histograms.
+Tasks:
+
+Load a dataset (e.g., from Kaggle or UCI).
+Create pair plots and heatmaps using Seaborn to find correlations.
+Use Plotly to create interactive visualizations and explore patterns in the data.
+3. Model Evaluation (2 hours)
+Confusion Matrix: Understand how to evaluate classification models using precision, recall, F1 score, and ROC-AUC.
+Cross-validation: Learn how k-fold cross-validation works to prevent overfitting and obtain robust performance metrics.
+Tasks:
+
+Train a classification model (e.g., logistic regression or decision tree) and plot the confusion matrix.
+Calculate precision, recall, and F1 score for a trained model.
+Perform k-fold cross-validation on a dataset and compare the results.
+
+Day 6 Schedule:
+1. Advanced Data Visualization Techniques (1 hour)
+Subplots and Axes: Learn how to create multiple plots in a single figure using plt.subplots().
+Annotations: Add text annotations and arrows to highlight specific parts of the plot.
+Customizing Plot Styles: Explore and apply different styles and customizations to improve the visual appeal of your plots.
+2. Exploring Plot Types (1 hour)
+Histograms: Understand how to create histograms and interpret distributions.
+Box Plots: Learn to create box plots for understanding data spread and identifying outliers.
+Pair Plots: Use pair plots to visualize relationships between multiple variables in a dataset.
+Heatmaps: Explore heatmaps for visualizing matrix-like data or correlations between variables.
+3. Working with Seaborn (1 hour)
+Basic Plots: Learn to create and customize basic plots like bar plots, line plots, and scatter plots using Seaborn.
+Facet Grids: Use FacetGrid to create multiple subplots for different subsets of the data.
+4. Practical Example and Application (1 hour)
+Project Work: Apply the visualization techniques learned to a real dataset. Create a variety of plots to analyze and present your findings.

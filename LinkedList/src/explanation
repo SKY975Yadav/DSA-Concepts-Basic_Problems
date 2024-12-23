@@ -1,0 +1,29 @@
+(5,x1)--> (10,x2)-->(13,x3)-->(17,x4)-->(20,null)   , key = 12
+4 cases :
+case 1 :
+if value is less than < 5
+we need to change the head
+if key < head.data
+temp = new Node(key)
+temp.next = head;
+return temp
+
+case 2 :
+if head == null
+return new Node(key);
+cur = head;
+case 3 :
+if key > last element in linked list
+cur = last element;
+temp = new Node(key)
+cur.next = temp;
+
+case 4 :
+if key should be in middle
+while(cur.next.data<key){
+cur = cur.next;
+}
+then :
+temp.next = cur.next;
+cur.next = temp;
+

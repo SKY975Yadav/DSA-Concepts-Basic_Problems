@@ -1,0 +1,106 @@
+Problem 1. Sub Array with Sum  = 0 :
+arr = [4,6,-2,3,-1,6,4]
+hash set hs = new hashSet()
+preSum = 0;
+
+for {
+step 1 : i=0
+preSum += arr[0](i.e : 4)
+check the preSum is in hash set or not
+if yes or preSum==0 : return true,but ans:no
+hs.add(4)
+step 2 : i=1
+preSum += arr[1](i.e : 4+6=10)
+check the preSum is in hash set or not
+if yes or preSum==0 : return true,but ans:no
+hs.add(10)
+now hashSet = {4,10}
+step 3 : i=2
+preSum += arr[2](i.e : 4+6+(-2)=8)
+check the preSum is in hash set or not
+if yes or preSum==0 : return true,but ans:no
+hs.add(8)
+now hashSet = {4,10,8}
+step 4 : i=3
+preSum += arr[3](i.e : 4+6+(-2)+3=11)
+check the preSum is in hash set or not
+if yes or preSum==0 : return true,but ans:no
+hs.add(11)
+now hashSet = {4,10,8,11}
+step 5 : i=4
+preSum += arr[-1](i.e : 4+6+(-2)+3-1=10)
+check the preSum is in hash set or not
+if yes or preSum==0 : return true;
+}
+because 10 is already in the hashset
+That's the idea
+
+Problem 2. Sub array with sum = given sum
+
+arr = {34,7,23,75},sum = 30
+hash set hs = new hashSet()
+OldPreSum = 0;
+newPreSum = 0;
+for{
+step 1 : i=0:
+preSum += arr[0](i.e : 34)
+NewPreSum = OldPreSum - sum;(34-30 = 4)
+check NewPreSum(i.e 4) is in hashSet or not
+if yes : return true ,but ans : is no
+hs.add(OldPreSum)
+now hashSet = {34}
+
+step 2 : i=1:
+preSum += arr[1](i.e : 34+7=41)
+NewPreSum = OldPreSum - sum;(41-30 = 9)
+check NewPreSum(i.e 4) is in hashSet or not
+if yes : return true ,but ans : is no
+hs.add(OldPreSum)
+now hashSet = {34,41}
+
+step 3 : i=2:
+preSum += arr[2](i.e : 34+7+23=64)
+NewPreSum = OldPreSum - sum;(64-30 = 34)
+check NewPreSum(i.e 4) is in hashSet or not
+if yes : return true, ans : is yes
+Idea is this
+}
+
+Problem 3 :length of longest sub array with given sum
+ar = {3,6,4,12,1,1,1,3,4};,sum = 10
+HashMap mp = new hashMap();
+maxLength = 0;
+preSum =0;
+
+for{
+preSum += a[i]
+if preSum == sum then maxLen = i+1
+if map doesn't contain preSum then put/add preSum as value and 'i' as value in map,this is because we didn't want to insert the same value again this because it length always provide sub array as Zero there is no point of putting in map
+if map contain preSum - Sum i.e we got the sub array then check it's length by i - map.get(preSum - sum), if it is greater then previous max length then update it
+else run the loop till the last element of array is stored in map
+} return maxLength;
+
+procedure :
+step 1 : i=0
+preSum = a[0] = 3
+false
+true : map{ (3,0) }
+false
+total map = { (3,0) }
+step 2 : i=1
+preSum += a[1] = 3+6 = 9
+false
+true : map{ (9,1) }
+false
+total map = { (3,0), (9,1) }
+step 3 : i=2
+preSum += a[2] = 3+6+4 = 13
+false
+true : map{ (13,2) }
+false
+total map = { (3,0), (9,1), (13,2) }
+preSum - sum = 13-10 = 3 it is present on map and its length is 2-0 i.e 2 , so 2>0 then max length = 2
+........total map = { (3,0), (9,1), (13,2), (25,3) }..............
+similarly we get (1,1,1,3,4) we get preSum =  35 - 10 = 25, 25 is already in map  then length = i-value(25)= 8-3 = 5
+5>2 so maxLength = 5
+return 5

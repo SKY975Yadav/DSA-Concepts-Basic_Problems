@@ -1,0 +1,2 @@
+floorSRoot(long x) ex : 5
+if 5 / 2,

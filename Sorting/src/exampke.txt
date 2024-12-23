@@ -1,0 +1,9 @@
+[4,2,3] k = 2
+after sort =[2,3,4]
+x=1
+
+
+x = 0;
+min = Integer.max;
+run a loop
+
